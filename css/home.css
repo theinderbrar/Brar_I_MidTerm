@@ -1,0 +1,102 @@
+/* ------------------------
+------------ Home Page 
+------------------------ */
+
+/* Header */
+header {
+  background-image: linear-gradient(to right bottom, #54310022, #54310044),
+    url('../img/beverage-drink-beer-cheers-.jpg');
+  min-height: 80vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  font-size: 62px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation-name: moveInFromLeftFade;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+header span {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  animation-name: moveInFromRightFade;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+/* About Section */
+section.about {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  padding: 50px;
+}
+section.about h2 {
+  font-size: 42px;
+  color: #543100;
+}
+section.about .cta {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #543100;
+  padding: 5px 10px;
+}
+section.about .cta:hover {
+  text-decoration: underline;
+  background-color: #ffbf0033;
+}
+/* Product Section */
+section.product {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  padding: 50px;
+  background-color: #ffbf0022;
+}
+section.product h2 {
+  font-size: 42px;
+  color: #543100;
+}
+section.product .cta {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #543100;
+  padding: 5px 10px;
+}
+section.product .cta:hover {
+  text-decoration: underline;
+  background-color: #ffbf0033;
+}
+/* Contact Section */
+section.contact {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  padding: 50px;
+}
+section.contact h2 {
+  font-size: 42px;
+  color: #543100;
+}
+section.contact .cta {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #543100;
+  padding: 5px 10px;
+}
+section.contact .cta:hover {
+  text-decoration: underline;
+  background-color: #ffbf0033;
+}

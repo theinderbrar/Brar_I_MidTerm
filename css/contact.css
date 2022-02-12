@@ -1,0 +1,71 @@
+header {
+  background-image: linear-gradient(to right bottom, #54310022, #54310044),
+    url('../img/beverage-drink-beer-cheers-.jpg');
+  min-height: 30vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  font-size: 62px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation-name: moveInFromLeftFade;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+header span {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  animation-name: moveInFromRightFade;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+section.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 30px;
+  background-color: antiquewhite;
+  grid-auto-rows: 350px;
+}
+section.contact .contact-details {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+section.contact .contact-details .contact-detail-group {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5px;
+}
+section.contact .contact-details .contact-detail-group .contact-detail-group-heading {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+section.contact .contact-details .contact-detail-group .contact-detail-group-detail {
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+section.contact .contact-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  section.contact {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+}

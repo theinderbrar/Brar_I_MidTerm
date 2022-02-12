@@ -1,0 +1,76 @@
+header {
+  background-image: linear-gradient(to right bottom, #54310022, #54310044),
+    url('../img/beverage-drink-beer-cheers-.jpg');
+  min-height: 30vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  font-size: 62px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation-name: moveInFromLeftFade;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+header span {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  animation-name: moveInFromRightFade;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+/* Products */
+section.products {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 30px;
+  color: #543100;
+}
+section.products .product {
+  border-radius: 10px;
+  background-color: #ffbf0033;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+section.products .product .product-image {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  height: 195px;
+}
+section.products .product .product-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+section.products .product .product-name {
+  font-weight: 700;
+  /* text-transform: uppercase; */
+  font-size: 22px;
+}
+
+section.products .product .product-buy {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+section.products .product .product-buy:hover {
+  background-color: #ffbf0088;
+  color: white;
+}
